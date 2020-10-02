@@ -46,6 +46,7 @@ type Options struct {
 
 // Process implements golang.org/x/tools/imports.Process with explicit context in opt.Env.
 func Process(filename string, src []byte, opt *Options) (formatted []byte, err error) {
+	println("Vans239 Process fork")
 	fileSet := token.NewFileSet()
 	file, adjust, err := parse(fileSet, filename, src, opt)
 	if err != nil {
