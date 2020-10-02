@@ -199,6 +199,7 @@ func walkDir(path string) {
 }
 
 func main() {
+	println("Vans239 fork")
 	runtime.GOMAXPROCS(runtime.NumCPU())
 
 	// call gofmtMain in a separate function
